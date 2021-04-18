@@ -15,4 +15,4 @@ toggleBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     sidebar.classList.remove('show-sidebar');
-})
+});
