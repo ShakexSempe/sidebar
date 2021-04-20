@@ -38,6 +38,8 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
+  --clr-brown: #7a1f1f;
+  --clr-pink: #faa9b7;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
@@ -169,14 +171,19 @@ Sidebar
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-red-dark);
+  color: var(--clr-brown) ;
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 4s ease-in-out infinite;
 }
 .sidebar-toggle:hover {
-  color: var(--clr-red-light);
+  color: var(--clr-pink);
 }
+.sidebar-toggle:focus {
+  color: var(--clr-white);
+  border-color: transparent;
+}
+
 @keyframes bounce {
   0% {
     transform: scale(1);
