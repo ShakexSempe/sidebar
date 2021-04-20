@@ -206,8 +206,9 @@ Menu
 }
 .btn-container {
   margin-bottom: 4rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
 }
 .filter-btn {
   background: transparent;
@@ -271,12 +272,13 @@ Menu
 
 @media screen and (min-width: 768px) {
   .menu-item {
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 200px;
     gap: 0 1.25rem;
     max-width: 40rem;
   }
   .photo {
-    height: 175px;
+    object-fit: contain;
+    height: 300px;
   }
 }
 @media screen and (min-width: 1200px) {
