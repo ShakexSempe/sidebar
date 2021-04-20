@@ -186,7 +186,7 @@ Modal
 .hero {
   min-height: 100vh;
   background: pink;
-  background-image: url(/menu/images/munch-logo.jpg);
+  background-image: url(../menu/images/munch-logo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -211,7 +211,7 @@ Modal
   top: 0;
   left: 10px;
   width: 90%;
-  height: 100%;
+  height: 60%;
   border-radius: 50px;
   background: rgba(202, 28, 159, 0.074);
   animation: banner 3s linear infinite alternate;
@@ -219,8 +219,9 @@ Modal
 }
 @keyframes banner {
   100% {
-    left: 100%;
+    left: 97%;
     width: 0px;
+    border-radius: 70%;
 
   }
 }
