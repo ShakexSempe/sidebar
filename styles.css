@@ -165,7 +165,7 @@ background: rgba(172, 5, 108, 0.185);
 }
 .info-container i {
   font-size: 2.5em;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 .info-container a:hover{
   transition: .2s ease;
