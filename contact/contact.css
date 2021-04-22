@@ -226,8 +226,18 @@ Questions
   font-size: 2em;
   color: var(--clr-gold);
   text-align: center;
-  background: rgba(255, 192, 203, 0.37);
+  /* background: rgba(255, 192, 203, 0.37); */
   width: 100%;
+  animation: home 10s linear infinite;
+}
+@keyframes home {
+  
+  50% {
+    transform: rotateY(360deg);
+  }
+}
+#home:hover {
+  animation: none;
 }
 .question-btn {
   font-size: 1.5rem;
