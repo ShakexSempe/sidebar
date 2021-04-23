@@ -120,6 +120,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-brown);
   letter-spacing: 1.3px;
+  
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -196,14 +197,17 @@ About
 .title p {
   width: 80%;
   margin: 0 auto;
+  font-family: 'Courgette', cursive;
+
 }
 #home {
-  font-size: 2em;
+  font-size: 3em;
   color: var(--clr-brown);
   text-align: center;
   /* background: rgba(255, 192, 203, 0.37); */
   width: 100%;
   animation: home 10s linear infinite;
+  margin: 0.5em 0 0.5em 0;
 }
 @keyframes home {
   

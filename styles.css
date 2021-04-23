@@ -75,6 +75,15 @@ body {
   font-size: 0.875rem;
   height: 100vh;
   position: relative;
+  background: linear-gradient(90deg, rgba(155, 1, 24, 0.836), pink, brown);
+  background-size: 780%;
+  background-position: center;
+  animation: bg 5s ease-in-out infinite alternate;
+}
+@keyframes bg {
+  100% {
+    background-position: left;
+  }
 }
 
 #header {
