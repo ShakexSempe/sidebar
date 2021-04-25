@@ -223,11 +223,14 @@ Questions
   font-weight: 600;
 }
 #home {
+  display: block;
   font-size: 2em;
   color: var(--clr-gold);
   text-align: center;
-  /* background: rgba(255, 192, 203, 0.37); */
+  background: rgba(255, 192, 203, 0.37);
   width: 100%;
+}
+#home i {
   animation: home 10s linear infinite;
 }
 @keyframes home {
@@ -237,6 +240,10 @@ Questions
   }
 }
 #home:hover {
+  background: rgba(238, 136, 153, 0.57);
+
+}
+#home:hover i {
   animation: none;
 }
 .question-btn {

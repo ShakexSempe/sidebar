@@ -126,7 +126,7 @@ p {
     font-size: 4rem;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   h3 {
     font-size: 1.75rem;
@@ -196,6 +196,7 @@ About
 }
 .title p {
   width: 80%;
+  font-size: 1.4em;
   text-align: center;
   margin: 30px auto;
   font-family: 'Courgette', cursive;
@@ -205,18 +206,23 @@ About
   font-size: 3em;
   color: var(--clr-brown);
   text-align: center;
-  /* background: rgba(255, 192, 203, 0.37); */
+  background: rgba(255, 192, 203, 0.37);
   width: 100%;
-  animation: home 10s linear infinite;
+  display: block;
   margin: 0.5em 0 0.5em 0;
 }
+#home i{
+  animation: home 10s linear infinite;
+}
 @keyframes home {
-  
   50% {
     transform: rotateY(360deg);
   }
 }
 #home:hover {
+  background: rgba(173, 130, 137, 0.37);
+}
+#home:hover i {
   animation: none;
 }
 .about-img {
