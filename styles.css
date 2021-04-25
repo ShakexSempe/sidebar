@@ -264,7 +264,27 @@ main {
   display: grid;
   place-items: center;
 }
-
+.cake-1 {
+  background-image: url('../images/item-7.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cake-2 {
+  background-image: url('../images/item-5.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cake-3 {
+  background-image: url('../images/item-2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 /*
 =============== 
 Sidebar

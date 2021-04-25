@@ -5,7 +5,7 @@ const menu = [
     title: "Frozen Theme Cake",
     category: "girls",
     price: 45.00,
-    img: "./images/item-1.jpg",
+    img: "../images/item-1.jpg",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
   {
@@ -13,7 +13,7 @@ const menu = [
     title: "dragoballZ Theme cake",
     category: "boys",
     price: 45.00,
-    img: "./images/item-2.jpg",
+    img: "../images/item-2.jpg",
     desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
   },
   {
@@ -21,7 +21,7 @@ const menu = [
     title: "BMW theme cake",
     category: "boys",
     price: 45.00,
-    img: "./images/item-3.jpg",
+    img: "../images/item-3.jpg",
     desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
   },
   {
@@ -29,7 +29,7 @@ const menu = [
     title: "white wedding",
     category: "adults",
     price: 45.00,
-    img: "./images/item-4.jpg",
+    img: "../images/item-4.jpg",
     desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
   },
   {
@@ -37,7 +37,7 @@ const menu = [
     title: "mother's birthday",
     category: "adult",
     price: 45.00,
-    img: "./images/item-5.jpg",
+    img: "../images/item-5.jpg",
     desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
   },
   {
@@ -45,7 +45,7 @@ const menu = [
     title: "mother's birthday rose bucket",
     category: "adults",
     price: 45.00,
-    img: "./images/item-6.jpg",
+    img: "../images/item-6.jpg",
     desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
   },
   {
@@ -53,7 +53,7 @@ const menu = [
     title: "ladies birthday",
     category: "adults",
     price: 45.00,
-    img: "./images/item-7.jpg",
+    img: "../images/item-7.jpg",
     desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
   },
   {
@@ -61,7 +61,7 @@ const menu = [
     title: "birthday classic drip",
     category: "girls",
     price: 45.00,
-    img: "./images/item-8.jpg",
+    img: "../images/item-8.jpg",
     desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
   },
   {
@@ -69,7 +69,7 @@ const menu = [
     title: "Munch Up",
     category: "shakes",
     price: 70.00,
-    img: "./images/munch-logo.jpg",
+    img: "../images/munch-logo.jpg",
     desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
   },
   
