@@ -121,7 +121,7 @@ background: rgba(172, 5, 108, 0.185);
 }
 
 #potrait{
-  background-image: url('Lebaone.jpg');
+  background-image: url('../images/Lebaone.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
