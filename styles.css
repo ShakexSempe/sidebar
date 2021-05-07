@@ -75,7 +75,7 @@ body {
   font-size: 0.875rem;
   height: 100vh;
   position: relative;
-  background: linear-gradient(60deg, rgba(155, 1, 24, 0.836), pink, brown);
+  background: linear-gradient(60deg, rgba(155, 1, 24, 0.836), rgb(255, 255, 255), brown);
   background-size: 480%;
   background-position: center;
 }
@@ -337,11 +337,15 @@ Sidebar
   right: 3rem;
   font-size: 2rem;
   background: transparent;
-  border-color: transparent;
-  color: var(--clr-brown) ;
+  border: 3px solid var(--clr-brown);
+  border-radius: 100%;
+  padding: 8px;
+  color: var(--clr-white) ;
+  background: var(--clr-brown);
   transition: var(--transition);
   cursor: pointer;
   animation: bounce 4s ease-in-out infinite;
+  z-index: 30;
 }
 .sidebar-toggle:hover {
   color: var(--clr-pink);
@@ -355,7 +359,10 @@ Sidebar
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    /* transform: scale(1.2); */
+    background-color: #dc143c;
+    border: 3px solid var(--clr-white);
+
   }
   100% {
     transform: scale(1);
@@ -432,6 +439,7 @@ Sidebar
   box-shadow: var(--clr-red-dark);
   transition: var(--transition);
   transform: translate(-100%);
+  z-index: 30;
 }
 .show-sidebar {
   transform: translate(0);
