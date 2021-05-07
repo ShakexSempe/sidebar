@@ -95,6 +95,8 @@ body {
   background-attachment: fixed;
   position: relative;
   z-index: -10;
+  display: grid;
+  place-items: center;
 }
 #main::before {
 content: '';
@@ -103,17 +105,21 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: rgba(172, 5, 108, 0.185);
+background: transparent;
 }
 
 
 #about {
-  background: rgba(94, 3, 97, 0.348);
-  position: absolute;
-  top: 0vh;
-  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(100, 23, 119, 0.349);
+  background-image: linear-gradient(90deg, rgba(109, 14, 14, 0.356), rgba(148, 23, 92, 0.411));
+  /* background: rgba(94, 3, 97, 0.348); */
+  width: 70%;
   height: auto;
   backdrop-filter: blur(10px);
+  position: sticky;
+  top: 5%;
+  border-radius: 10px;
 }
 #about h1, #about p {
   text-align: center;
@@ -280,6 +286,27 @@ main {
 }
 .cake-3 {
   background-image: url('images/item-2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cake-4 {
+  background-image: url('images/item-1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cake-5 {
+  background-image: url('images/item-4.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cake-6 {
+  background-image: url('images/item-6.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
