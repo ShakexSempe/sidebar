@@ -66,10 +66,106 @@ const menu = [
   },
   {
     id: 9,
+    title: "chocolate & vanilla",
+    category: "birthday",
+    price: 400,
+    img: "../images/item-9.jpg",
+    desc: `Delicious birthday Cakes.. Munch Up`,
+  },
+  {
+    id: 10,
     title: "Munch Up",
-    category: "shakes",
+    category: "cupcakes",
+    price: 250,
+    img: "../images/item-10.jpg",
+    desc: `Delicious Cupcakes.. Munch Up`,
+  },
+  {
+    id: 11,
+    title: "Baby Boy birthday cake",
+    category: "kids",
+    price: 400,
+    img: "../images/item-11.jpg",
+    desc: `Delicious Baby birthday Cakes.. Munch Up`,
+  },
+  {
+    id: 12,
+    title: "Valentines Cupcakes",
+    category: "cupcakes",
+    price: 250,
+    img: "../images/item-12.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 13,
+    title: "White Cake",
+    category: "adults",
+    price: 550,
+    img: "../images/item-13.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 14,
+    title: "spiderman theme cake",
+    category: "kids",
+    price: 500,
+    img: "../images/item-14.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 15,
+    title: "Munch Up",
+    category: "kids",
+    price: 450,
+    img: "../images/item-15.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 16,
+    title: "cake",
+    category: "adults",
+    price: 550,
+    img: "../images/item-16.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 17,
+    title: "brthday cake",
+    category: "birthday",
+    price: 550,
+    img: "../images/item-17.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 18,
+    title: "sweet strawberry",
+    category: "birthday",
+    price: 550,
+    img: "../images/item-18.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 19,
+    title: "Superhero cake",
+    category: "kids",
+    price: 400,
+    img: "../images/item-19.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 20,
+    title: "Spiderman theme",
+    category: "boys",
+    price: 400,
+    img: "../images/item-20.jpg",
+    desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
+  },
+  {
+    id: 21,
+    title: "Teletubbies theme cake",
+    category: "kids",
     price: 0,
-    img: "../images/munch-logo.jpg",
+    img: "../images/item-21.jpg",
     desc: `Wholesome meals. Delicious Cakes.. Munch Up`,
   },
   
@@ -78,11 +174,33 @@ const menu = [
 
 const sectionCenter = document.querySelector('.section-center');
 const filterButtons = document.querySelectorAll('.filter-btn');
+const container = document.querySelector('.btn-container');
 
 //when page loads
 window.addEventListener('DOMContentLoaded' , () => {
-  displayMenuItems(menu)
+  displayMenuItems(menu);
+  displayMenuButtons();
 });
+
+displayMenuButtons = () => {
+  const categories = menu.reduce((values, item) => {
+    if(!values.includes(item.category)) {
+      values.push(item.category);
+    }
+    return values;
+  }, ['all']);
+
+  const categoryButtons = categories.map(category => {
+    console.log(category);
+    return `<button class="filter-btn" 
+    type="button" 
+    data-id=${category}>
+    ${category}</button>`
+  }).join("");
+
+  container.innerHTML = categoryButtons;
+  const filterButtons = document.querySelectorAll('.filter-btn');
+
 
 
 //filter items
@@ -90,14 +208,13 @@ filterButtons.forEach(btn => {
   btn.addEventListener('click', e => {
     const category = e.currentTarget.dataset.id;
     const menuCategory = menu.filter(menuItem => {
-
       if (menuItem.category === category) {
-        return menuItem
+        return menuItem;
       }
     });
 
     if (category === 'all') {
-      displayMenuItems(menu)
+      displayMenuItems(menu);
     }
     else {
       displayMenuItems(menuCategory);
@@ -105,8 +222,7 @@ filterButtons.forEach(btn => {
   });
 });
 
-
-
+}
 
 
 
