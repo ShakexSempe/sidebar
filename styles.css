@@ -444,6 +444,23 @@ Sidebar
 .show-sidebar {
   transform: translate(0);
 }
+
+footer {
+  background: #000;
+  text-align: center;
+  background: pink;
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+footer a {
+  font-size: 1.2em;
+  margin: 0 auto;
+  color:#333;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 400px;
